@@ -29,7 +29,7 @@ export default async function TopicsList() {
           key={t._id}
           className="p-4 border border-slate-300 my-3 flex justify-between gap-5 items-start background"
         >
-          <style>{'body { background-color: #1C1C1C; color:white; } .background {background-image: url("https://w7.pngwing.com/pngs/632/57/png-transparent-heartagram-tattoo-ink-him-ornament-heartagram-angle-triangle-heart-thumbnail.png");}'
+          <style>{'body { background-color: #1C1C1C; color:white; } .body {background-image: url("https://w7.pngwing.com/pngs/632/57/png-transparent-heartagram-tattoo-ink-him-ornament-heartagram-angle-triangle-heart-thumbnail.png");}'
           }
           </style>
           <div>
