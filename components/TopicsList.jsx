@@ -29,7 +29,9 @@ export default async function TopicsList() {
           key={t._id}
           className="p-4 border border-slate-300 my-3 flex justify-between gap-5 items-start background"
         >
-          <style>{'body { background-color: black; }'}</style>
+          <style>{'body { background-color: #1C1C1C; color:white; }'
+          }
+          </style>
           <div>
             <h2 className="font-bold text-2xl">{t.title}</h2>
             <div>{t.description}</div>
