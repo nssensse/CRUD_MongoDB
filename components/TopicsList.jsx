@@ -1,7 +1,6 @@
 import Link from "next/link";
 import RemoveBtn from "./RemoveBtn";
 import { HiPencilAlt } from "react-icons/hi";
-import styles from 'style.css';
 const getTopics = async () => {
   const apiUrl=process.env.API_URL;
   try {
