@@ -6,7 +6,7 @@ export default function Navbar() {
       <Link className="text-white font-bold" href={"/"}>
         Bonus buy 💰*
       </Link>
-      <Link className="bg-white p-2" href={"/addTopic"}>
+      <Link className="bg-black p-2" href={"/addTopic"}>
         Add Bonus
       </Link>
     </nav>

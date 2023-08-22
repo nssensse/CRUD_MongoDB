@@ -1,7 +1,7 @@
 import Link from "next/link";
 import RemoveBtn from "./RemoveBtn";
 import { HiPencilAlt } from "react-icons/hi";
-
+import styles from 'style.css';
 const getTopics = async () => {
   const apiUrl=process.env.API_URL;
   try {
@@ -37,7 +37,7 @@ export default async function TopicsList() {
             <div>{t.description}</div>
           </div>
 
-          <div className="flex gap-2">
+          <div className= {styles.root}>
             <RemoveBtn id={t._id} />
             <Link href={`/editTopic/${t._id}`}>
               <HiPencilAlt size={24} />
