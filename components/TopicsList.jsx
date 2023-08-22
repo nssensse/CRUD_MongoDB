@@ -1,8 +1,8 @@
 import Link from "next/link";
 import RemoveBtn from "./RemoveBtn";
 import { HiPencilAlt } from "react-icons/hi";
+
 const getTopics = async () => {
-  const apiUrl=process.env.API_URL;
   try {
     const res = await fetch(`${apiUrl}/api/topics`, {
       cache: "no-store",
@@ -26,17 +26,14 @@ export default async function TopicsList() {
       {topics.map((t) => (
         <div
           key={t._id}
-          className="p-4 border border-slate-300 my-3 flex justify-between gap-5 items-start background"
+          className="p-4 border border-slate-300 my-3 flex justify-between gap-5 items-start"
         >
-          <style>{'body {color:white; } .body {background-image: url("https://w7.pngwing.com/pngs/632/57/png-transparent-heartagram-tattoo-ink-him-ornament-heartagram-angle-triangle-heart-thumbnail.png");}'
-          }
-          </style>
           <div>
             <h2 className="font-bold text-2xl">{t.title}</h2>
             <div>{t.description}</div>
           </div>
 
-          <div className= {styles.root}>
+          <div className="flex gap-2">
             <RemoveBtn id={t._id} />
             <Link href={`/editTopic/${t._id}`}>
               <HiPencilAlt size={24} />
